@@ -1347,6 +1347,7 @@ img{
 	display:inline-block;
 	background-color:var(--main-color-two);
 	margin-bottom:var(--margin-bottom-20);
+	margin-top: 20px;
 }
 
 .sec-title .title.color-two{

@@ -41,8 +41,7 @@
     }
 	@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 
-
-#aiml-tabs .warpper{
+	#aiml-tabs .warpper{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -85,33 +84,36 @@
         opacity:1;
     }
 }
-#aiml-tabs .panel-title{
-  font-size:1.5em;
-  font-weight:bold
+#aiml-tabs .panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
 }
-#aiml-tabs .radio{
-  display:none;
+
+#aiml-tabs .radio {
+  display: none;
 }
+
 #zero:checked ~ .panels #zero-panel,
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel, 
-#five:checked ~ .panels #five-panel 
-#six:checked ~ .panels #six-panel 
-#seven:checked ~ .panels #seven-panel 
-#eight:checked ~ .panels #eight-panel 
-#nine:checked ~ .panels #nine-panel
-#ten:checked ~ .panels #ten-panel 
-#eleven:checked ~ .panels #eleven-panel 
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel,
+#six:checked ~ .panels #six-panel,
+#seven:checked ~ .panels #seven-panel,
+#eight:checked ~ .panels #eight-panel,
+#nine:checked ~ .panels #nine-panel,
+#ten:checked ~ .panels #ten-panel,
+#eleven:checked ~ .panels #eleven-panel,
 #twelve:checked ~ .panels #twelve-panel {
-  display:block
+  display: block;
 }
+
 #zero:checked ~ .tabs #zero-tab,
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
-#four:checked ~ .tabs #four-tab ,
+#four:checked ~ .tabs #four-tab,
 #five:checked ~ .tabs #five-tab,
 #six:checked ~ .tabs #six-tab,
 #seven:checked ~ .tabs #seven-tab,
@@ -119,169 +121,104 @@
 #nine:checked ~ .tabs #nine-tab,
 #ten:checked ~ .tabs #ten-tab,
 #eleven:checked ~ .tabs #eleven-tab,
-#twelve:checked ~ .tabs #twelve-tab,
-/* zero panel */
-#zero:checked~.tabs #zero-tab {
-            background-color: #3498db;
-            color: #2c3e50;
-            border-top: 3px solid  #2980b9;
-        }
+#twelve:checked ~ .tabs #twelve-tab {
+  background-color: #3498db;
+  color: #2c3e50;
+  border-top: 3px solid #2980b9;
+}
 
-        #zero-panel {
-            background-color: #3498db;
-            color: #2c3e50;         
-        }
+/* Panel styles */
+#zero-panel,
+#one-panel,
+#two-panel,
+#three-panel,
+#four-panel,
+#five-panel,
+#six-panel,
+#seven-panel,
+#eight-panel,
+#nine-panel,
+#ten-panel,
+#eleven-panel,
+#twelve-panel {
+  display: none;
+}
+
+/* Individual panel styles */
+#zero-panel {
+  background-color: #3498db;
+  color: #2c3e50;
+}
+
+#one-panel {
+  background-color: #2ecc71;
+  color: #34495e;
+}
+
+#two-panel {
+  background-color: #e74c3c;
+  color: #2c3e50;
+}
+
+#three-panel {
+  background-color: #9b59b6;
+  color: #34495e;
+}
+
+#four-panel {
+  background-color: #f39c12;
+  color: #2c3e50;
+}
+
+#five-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#six-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#seven-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#eight-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#nine-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#ten-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#eleven-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#twelve-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
 
 
-        /* one panel */
-        #one:checked~.tabs #one-tab {
-            background-color: #2ecc71;
-            color: #34495e;
-            border-top: 3px solid #27ae60;
-        }
+.panel p {
+  color: white;
+}
 
-        #one-panel {
-            background-color: #2ecc71;
-            color: #34495e;
-        }
-
-        /* two panel */
-        #two:checked~.tabs #two-tab {
-            background-color: #e74c3c;
-            color: #2c3e50;
-            border-top: 3px solid #c0392b;
-        }
-
-        #two-panel {
-            background-color: #e74c3c;
-            color: 2c3e50;
-        }
-
-
-        /* three panel */
-        #three:checked~.tabs #three-tab {
-            background-color: #9b59b6;
-            color: #34495e;
-            border-top: 3px solid #8e44ad;
-        }
-
-        #three-panel {
-            background-color: #9b59b6;
-            color: #34495e;         
-        }
-
-        /* fourth panel */
-        #four:checked~.tabs #four-tab {
-            background-color: #f39c12;
-            color: #2c3e50;
-            border-top: 3px solid  #d35400;
-        }
-
-        #four-panel {
-            background-color: #f39c12;
-            color: #2c3e50; 
-        }
-
-
-        /* fifth panel */
-        #five:checked~.tabs #five-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #five-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* six panel */
-        #six:checked~.tabs #six-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #six-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* seven panel */
-        #seven:checked~.tabs #seven-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #seven-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* eight panel */
-        #eight:checked~.tabs #eight-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #eight-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* nine panel */
-        #nine:checked~.tabs #nine-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #nine-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* ten panel */
-        #ten:checked~.tabs #ten-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #ten-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* eleven panel */
-        #eleven:checked~.tabs #eleven-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #eleven-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-        /* twelve panel */
-        #twelve:checked~.tabs #twelve-tab {
-            background: #1abc9c;
-            color: #34495e;
-            border-top: 3px solid #16a085;
-        }
-
-        #twelve-panel {
-            background: #1abc9c;
-            color: #34495e;
-        }
-
-        /* background color */
-        .panel p {
-            color:white;
-        }
-
-        .panel {
-            padding: 10px;
-            border-radius: 10px;
-        }
-		
+.panel {
+  padding: 10px;
+  border-radius: 10px;
+}
 		@media only screen and (max-width: 768px) {
         .custom-section {
         display: none;
@@ -325,6 +262,76 @@
   #nextBtn {
     right: 10px;
   }
+  #news-container {
+	float: right;
+	width: 500px;
+    height: 500px;
+    margin-right: 10px;
+	margin-top: 5px;
+  }
+  .news {
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+  width: 350px;
+  height: 30px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 3px;
+  -webkit-user-select: none
+} 
+.full-width{
+    width: 100%;
+}
+.news span {
+  float: left;
+  color: #fff;
+  padding: 6px;
+  position: relative;
+  top: 1%;
+  border-radius: 4px;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+  font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  cursor: pointer
+}
+
+.news ul {
+  float: left;
+  padding-left: 20px;
+  animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+  -webkit-user-select: none
+}
+
+.news ul li {line-height: 30px; list-style: none }
+
+.news ul li a {
+  color: #fff;
+  text-decoration: none;
+  font: 14px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none
+}
+@keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -30px}
+	50%  {margin-top: -60px}
+	75%  {margin-top: -90px}
+	100% {margin-top: 0}
+}
+.news ul:hover { animation-play-state: paused }
+.news span:hover+ul { animation-play-state: paused }
+/* OTHER COLORS */
+.blue { background: #347fd0 }
+.blue span { background: #2c66be }
+.red { background: #d23435 }
+.red span { background: #c22b2c }
+.green { background: #699B67 }
+.green span { background: #547d52 }
+.magenta { background: #b63ace }
+.magenta span { background: #842696 }
+.yellow {background : yellow}
+.yellow span {background : yellow}
 </style>
 </head>
 
@@ -578,6 +585,53 @@
 	</div>
 	<!-- END sidebar widget item -->
 	<section class="custom-section"></section>
+	<div id="news-container">
+		<div class="news red full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news yellow full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news blue full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news green full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news magenta full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+	</div>
 	<!-- Start slider -->
 	<div id="slider">
 		<img class="slider-image" src="./assets/images/main-slider/1.png" alt="Slide 1">
@@ -588,7 +642,10 @@
 		<button id="nextBtn" onclick="nextSlide()">></button>
 	</div>
 	<!-- End slider -->
-
+	
+	<!-- news start -->
+	
+	<!-- news end -->
 	<!-- <div id="news-ticker">
         <marquee behavior="scroll" direction="up" scrollamount="3">
             <ul id="news-list">
@@ -842,12 +899,12 @@
 					<div class="service-block">
 						<div class="inner-box">
 							<div class="image">
-								<a href="service-detail.html"><img class="transition-500ms" src="assets/images/resource/course_structure.jpg" alt="" /></a>
+								<a href="https://www.pvpsiddhartha.ac.in/syllabus_csm_20.html"><img class="transition-500ms" src="assets/images/resource/course_structure.jpg" alt="" /></a>
 							</div>
 							<div class="lower-content">
-								<div class="lessons">20+ Lessons</div>
+								<div class="lessons">4 Semesters</div>
 								<div class="lower-box">
-									<h4><a href="service-detail.html">Syllabus</a></h4>
+									<h4><a href="https://www.pvpsiddhartha.ac.in/syllabus_csm_20.html">Syllabus</a></h4>
 								</div>
 							</div>
 						</div>
@@ -872,12 +929,12 @@
 					<div class="service-block">
 						<div class="inner-box">
 							<div class="image">
-								<a href="service-detail.html"><img class="transition-500ms" src="assets/images/resource/time tables.png" alt="" /></a>
+								<a href="https://www.pvpsiddhartha.ac.in/dep_csm/docs/II-IITime_Table_23-24.pdf"><img class="transition-500ms" src="assets/images/resource/time tables.png" alt="" /></a>
 							</div>
 							<div class="lower-content">
 								<div class="lessons color-three">3+ Time Tables</div>
 								<div class="lower-box">
-									<h4><a href="service-detail.html">Time Tables</a></h4>
+									<h4><a href="https://www.pvpsiddhartha.ac.in/dep_csm/docs/II-IITime_Table_23-24.pdf">Time Tables</a></h4>
 								</div>
 							</div>
 						</div>
@@ -982,7 +1039,7 @@
 					<div class="inner-box transition-300ms">
 						<div class="icon transition-500ms flaticon-planning"></div>
 						<div class="step">Step 01</div>
-						<h4><a href="service-detail.html">Objectives</a></h4>
+						<h4><a href="#">Objectives</a></h4>
 						<div class="text"> Carefully plan tasks and goals, ensuring they match your objectives, deadlines, and priorities for effective progress and successful results. </div>
 					</div>
 				</div>
@@ -992,7 +1049,7 @@
 					<div class="inner-box transition-300ms">
 						<div class="icon transition-500ms flaticon-implement"></div>
 						<div class="step">Step 02</div>
-						<h4><a href="service-detail.html">Adjustments </a></h4>
+						<h4><a href="#">Adjustments </a></h4>
 						<div class="text">Continuously improve strategies by making necessary adjustments to ensure they remain effective and aligned with goals and changing circumstances.</div>
 					</div>
 				</div>
@@ -1002,7 +1059,7 @@
 					<div class="inner-box transition-300ms">
 						<div class="icon transition-500ms flaticon-friend"></div>
 						<div class="step">Step 03</div>
-						<h4><a href="service-detail.html">Collaboration</a></h4>
+						<h4><a href="#">Collaboration</a></h4>
 						<div class="text">Encourage teamwork and idea exchange, fostering a collaborative environment where sharing knowledge and insights leads to innovative solutions and mutual growth.</div>
 					</div>
 				</div>
@@ -1014,7 +1071,7 @@
 					<div class="inner-box transition-300ms">
 						<div class="icon transition-500ms flaticon-finish-line"></div>
 						<div class="step">Step 04</div>
-						<h4><a href="service-detail.html">Reflection</a></h4>
+						<h4><a href="#">Reflection</a></h4>
 						<div class="text">Recognize successes and embrace lessons, fostering a culture of acknowledgment and continuous improvement through celebrating achievements and reflecting on experiences.</div>
 					</div>
 				</div>
@@ -1025,17 +1082,17 @@
 	<!-- End Process Section -->
 	
 	<!-- Course Section Two -->
-	<section class="course-section-two">
-		<div class="auto-container">
+	<!-- <section class="course-section-two">
+		<div class="auto-container"> -->
 			<!-- Sec Title -->
-			<div class="sec-title centered">
+			<!-- <div class="sec-title centered">
 				<div class="title color-four">Featured</div>
 				<h2>Helpfull Blogs</h2>
 			</div>
-			<div class="row clearfix">
+			<div class="row clearfix"> -->
 				
 				<!-- Course Block -->
-				<div class="course-block col-lg-3 col-md-6 col-sm-12">
+				<!-- <div class="course-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
 							<a href="course-detail.html"><img class="transition-500ms" src="assets/images/resource/course-1.jpg" alt="" /></a>
@@ -1049,9 +1106,9 @@
 						</div>
 					</div>
 				</div>
-				
+				 -->
 				<!-- Course Block -->
-				<div class="course-block col-lg-3 col-md-6 col-sm-12">
+				<!-- <div class="course-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
 						<div class="image">
 							<a href="course-detail.html"><img class="transition-500ms" src="assets/images/resource/course-2.jpg" alt="" /></a>
@@ -1064,10 +1121,10 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- Course Block -->
-				<div class="course-block col-lg-3 col-md-6 col-sm-12">
+				<!-- <div class="course-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<div class="image">
 							<a href="course-detail.html"><img class="transition-500ms" src="assets/images/resource/course-3.jpg" alt="" /></a>
@@ -1080,10 +1137,10 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- Course Block -->
-				<div class="course-block col-lg-3 col-md-6 col-sm-12">
+				<!-- <div class="course-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
 						<div class="image">
 							<a href="course-detail.html"><img class="transition-500ms" src="assets/images/resource/course-4.jpg" alt="" /></a>
@@ -1100,7 +1157,7 @@
 				
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Course Section Two -->
 	
 	<!-- Clients Section -->
@@ -1136,17 +1193,17 @@
 	<!-- End Clients Section -->
 	
 	<!-- Testimonial Section -->
-	<section class="testimonial-section">
-		<div class="auto-container">
+	<!-- <section class="testimonial-section">
+		<div class="auto-container"> -->
 			<!-- Sec Title -->
-			<div class="sec-title centered">
+			<!-- <div class="sec-title centered">
 				<div class="title color-four">Testimonials</div>
 				<h2>Hear out what our students <br> say about Department.</h2>
 			</div>
 			<div class="testimonial-carousel owl-carousel owl-theme">
-				
+				 -->
 				<!-- Testimonial Block -->
-				<div class="testimonial-block">
+				<!-- <div class="testimonial-block">
 					<div class="inner-box">
 						<div class="upper-box">
 							<span class="quote-icon flaticon-quote-3"></span>
@@ -1169,10 +1226,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- Testimonial Block -->
-				<div class="testimonial-block">
+				<!-- <div class="testimonial-block">
 					<div class="inner-box">
 						<div class="upper-box">
 							<span class="quote-icon flaticon-quote-3"></span>
@@ -1196,9 +1253,9 @@
 						</div>
 					</div>
 				</div>
-				
+				 -->
 				<!-- Testimonial Block -->
-				<div class="testimonial-block">
+				<!-- <div class="testimonial-block">
 					<div class="inner-box">
 						<div class="upper-box">
 							<span class="quote-icon flaticon-quote-3"></span>
@@ -1221,10 +1278,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- Testimonial Block -->
-				<div class="testimonial-block">
+				<!-- <div class="testimonial-block">
 					<div class="inner-box">
 						<div class="upper-box">
 							<span class="quote-icon flaticon-quote-3"></span>
@@ -1251,7 +1308,7 @@
 				
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Testimonial Section -->
 	
 	<!-- News Section -->
@@ -1460,50 +1517,7 @@
 
 
 
-//   news upscrool
-document.addEventListener('DOMContentLoaded', function() {
-    setupSlider();
-    setupNewsTicker();
-});
 
-function setupSlider() {
-    // Your slider setup code goes here
-}
-
-function setupNewsTicker() {
-    const newsList = document.getElementById('news-list');
-
-    // Example news items
-    const newsItems = [
-        { title: 'Breaking News 1', url: '#' },
-        { title: 'Breaking News 2', url: '#' },
-        { title: 'Breaking News 3', url: '#' },
-        // Add more news items as needed
-    ];
-
-    // Populate the news ticker with news items
-    newsItems.forEach(item => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.textContent = item.title;
-        link.href = item.url;
-        listItem.appendChild(link);
-        newsList.appendChild(listItem);
-    });
-
-    // Scroll the news ticker upwards
-    let tickerPosition = 0;
-    setInterval(function() {
-        tickerPosition -= 1;
-        newsList.style.top = tickerPosition + 'px';
-
-        // Reset the ticker position if it goes beyond the container height
-        if (Math.abs(tickerPosition) >= newsList.clientHeight) {
-            tickerPosition = 0;
-            newsList.style.top = tickerPosition + 'px';
-        }
-    }, 50); // Adjust the scroll speed as needed
-}
 
 </script>
 

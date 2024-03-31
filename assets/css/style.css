@@ -1225,7 +1225,7 @@ body{
 
 .news-section{
 	position:relative;
-	padding:100px 0px 70px;
+	padding:20px 0px 70px;
 }
 
 .news-block{
@@ -6417,6 +6417,8 @@ body{
 .news-section-two{
 	position:relative;
 	padding:100px 0px 90px;
+	background-image: url('../images/background/pattern-2.png');
+	background-color: #000000;
 }
 
 .news-block-four{
