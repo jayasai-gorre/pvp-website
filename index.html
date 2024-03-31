@@ -97,7 +97,14 @@
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel,
 #four:checked ~ .panels #four-panel, 
-#five:checked ~ .panels #five-panel {
+#five:checked ~ .panels #five-panel 
+#six:checked ~ .panels #six-panel 
+#seven:checked ~ .panels #seven-panel 
+#eight:checked ~ .panels #eight-panel 
+#nine:checked ~ .panels #nine-panel
+#ten:checked ~ .panels #ten-panel 
+#eleven:checked ~ .panels #eleven-panel 
+#twelve:checked ~ .panels #twelve-panel {
   display:block
 }
 #zero:checked ~ .tabs #zero-tab,
@@ -106,6 +113,13 @@
 #three:checked ~ .tabs #three-tab,
 #four:checked ~ .tabs #four-tab ,
 #five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab,
+#seven:checked ~ .tabs #seven-tab,
+#eight:checked ~ .tabs #eight-tab,
+#nine:checked ~ .tabs #nine-tab,
+#ten:checked ~ .tabs #ten-tab,
+#eleven:checked ~ .tabs #eleven-tab,
+#twelve:checked ~ .tabs #twelve-tab,
 /* zero panel */
 #zero:checked~.tabs #zero-tab {
             background-color: #3498db;
@@ -180,6 +194,83 @@
             background: #1abc9c;
             color: #34495e;
         }
+        /* six panel */
+        #six:checked~.tabs #six-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #six-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* seven panel */
+        #seven:checked~.tabs #seven-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #seven-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* eight panel */
+        #eight:checked~.tabs #eight-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #eight-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* nine panel */
+        #nine:checked~.tabs #nine-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #nine-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* ten panel */
+        #ten:checked~.tabs #ten-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #ten-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* eleven panel */
+        #eleven:checked~.tabs #eleven-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #eleven-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
+        /* twelve panel */
+        #twelve:checked~.tabs #twelve-tab {
+            background: #1abc9c;
+            color: #34495e;
+            border-top: 3px solid #16a085;
+        }
+
+        #twelve-panel {
+            background: #1abc9c;
+            color: #34495e;
+        }
 
         /* background color */
         .panel p {
@@ -190,85 +281,50 @@
             padding: 10px;
             border-radius: 10px;
         }
-		.custom-section {
-			height: 30vh;
-            width: 100%;
-            background-color: #000;
-		}
+		
 		@media only screen and (max-width: 768px) {
         .custom-section {
         display: none;
     }
   }
-  .slider{
-    width: 1300px;
-    max-width: 100vw;
-    height: 850px;
-    margin: auto;
+  .custom-section {
+			height: 20vh;
+            width: 100%;
+			background-color: #000;
+		}
+	#slider {
     position: relative;
     overflow: hidden;
-}
-.slider .list{
+    width: 100%;
+    max-width: 1000px; /* Adjust max-width as needed */
+    height: auto;
+    margin-top: 0px; /* Center the slider */
+  }
+
+  .slider-image {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  #prevBtn,
+  #nextBtn {
     position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-}
-.slider .list img{
-    width: 1300px;
-    max-width: 100vw;
-    height: 100%;
-    object-fit: cover;
-}
-.slider .buttons{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.slider .buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
     color: #fff;
     border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-.slider .dots{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.slider .dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.slider .dots li.active{
-    width: 30px;
-}
-@media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-}
+    cursor: pointer;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
 </style>
 </head>
 
@@ -279,203 +335,198 @@
 		<!-- Image for mobile -->
 		<img src="./assets/images/prasad.png" class="banner-img mobile">
 	</div>
-
-<div class="page-wrapper">
+	<div class="page-wrapper">
  	
-	<!-- Preloader -->
-    <div class="preloader"></div>
-	<!-- End Preloader -->
- 	
- 	<!-- Header Style One -->
-    <header class="main-header">
-    	
-		<!-- Header Top -->
-		<video style="width: 100%;" muted autoplay>
-			<source src="./assets/images/main-slider/banner-2.mp4" type="video/mp4">
-		</video>
-        <!-- <div class="header-top">
-			<video style="display: inline; z-index: 50;" src="./assets/images/main-slider/banner-2.mp4" autoplay></video>
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-					
-					Top Left
-					<div class="top-left clearfix">
-						<div class="text"><span>Working timings:</span> Monday to Saturday 9 AM - 5 PM</div>
-					</div>
-					
-					Top Right
-                    <div class="top-right pull-right clearfix">
-						Social Box
-						<ul class="social-box">
-							<li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
-							<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
-							<li><a href="https://www.behance.com/" class="fa fa-behance"></a></li>
-							<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
-							<li><a href="https://youtube.com/" class="fa fa-youtube-play"></a></li>
-						</ul>
-						<div class="text">Call for consultation: <a href="tel:+0866-2581699">0866-2581699</a></div>
-                    </div>
-					
-                </div>
-            </div>
-        </div> -->
-		
-		<!-- Header Lower -->
-        <div class="header-lower">
-        	<div class="auto-container clearfix">
-				
-				<!-- Logo Box 
-				<div class="pull-left logo-box">
-					<div class="logo"><a href="index.html"><img src="assets/images/cse-removebg-preview.png" alt="" title=""></a></div>
-				</div>
-				-->
-				<!-- Nav Outer -->
-				<div class="nav-outer clearfix">
-					<!-- Mobile Navigation Toggler -->
-					<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-					<!-- Main Menu -->
-					<nav class="main-menu navbar-expand-md">
-						<div class="navbar-header">
-							<!-- Toggle Button -->
-							<button class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
+		<!-- Preloader -->
+		<div class="preloader"></div>
+		<!-- End Preloader -->
+		 
+		 <!-- Header Style One -->
+		<header class="main-header">
+			
+			<!-- Header Top -->
+			<video style="width: 100%;" muted autoplay>
+				<source src="./assets/images/main-slider/aiml-video.mp4" type="video/mp4">
+			</video>
+			<!-- <div class="header-top">
+				<video style="display: inline; z-index: 50;" src="./assets/images/main-slider/banner-2.mp4" autoplay></video>
+				<div class="auto-container">
+					<div class="inner-container clearfix">
+						
+						Top Left
+						<div class="top-left clearfix">
+							<div class="text"><span>Working timings:</span> Monday to Saturday 9 AM - 5 PM</div>
 						</div>
-
-						<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-							<ul class="navigation clearfix">
-								<li><a href="index.html">Home</a></li>
-								<!-- <li class="current dropdown"><a href="#">Home</a> -->
-								<!-- <ul>
-									<li><a href="index.html">Homepage One</a></li>
-									<li><a href="index-2.html">Homepage Two</a></li>
-									<li><a href="index-3.html">Homepage Three</a></li>
-									<li class="dropdown"><a href="#">Header Styles</a>
-										<ul>
-											<li><a href="index.html">Header Style One</a></li>
-											<li><a href="index-2.html">Header Style Two</a></li>
-											<li><a href="index-3.html">Header Style Three</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li> -->
-								<li class="dropdown"><a href="#">About Department</a>
-									<ul>
-										<li><a href="#one-tab">Vision</a></li> <!--href="about.html" -->
-										<li><a href="#two-tab">Mission</a></li> <!-- href="faq.html" -->
-										<li><a href="#three-tab">PEO's</a></li>  <!-- href="price.html" -->
-										<li><a href="#four-tab">PSO's</a></li>
-										<li><a href="#five-tab">PO's</a></li>
-										<!-- <li class="dropdown"><a href="#">Our Team</a>
+						
+						Top Right
+						<div class="top-right pull-right clearfix">
+							Social Box
+							<ul class="social-box">
+								<li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
+								<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+								<li><a href="https://www.behance.com/" class="fa fa-behance"></a></li>
+								<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
+								<li><a href="https://youtube.com/" class="fa fa-youtube-play"></a></li>
+							</ul>
+							<div class="text">Call for consultation: <a href="tel:+0866-2581699">0866-2581699</a></div>
+						</div>
+						
+					</div>
+				</div>
+			</div> -->
+			
+			<!-- Header Lower -->
+			<div class="header-lower">
+				<div class="auto-container clearfix">
+					
+					<!-- Logo Box 
+					<div class="pull-left logo-box">
+						<div class="logo"><a href="index.html"><img src="assets/images/cse-removebg-preview.png" alt="" title=""></a></div>
+					</div>
+					-->
+					<!-- Nav Outer -->
+					<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<!-- Toggle Button -->
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+	
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li><a href="index.html">Home</a></li>
+									<!-- <li class="current dropdown"><a href="#">Home</a> -->
+									<!-- <ul>
+										<li><a href="index.html">Homepage One</a></li>
+										<li><a href="index-2.html">Homepage Two</a></li>
+										<li><a href="index-3.html">Homepage Three</a></li>
+										<li class="dropdown"><a href="#">Header Styles</a>
 											<ul>
-												<li><a href="mentors.html">Team</a></li>
-												<li><a href="mentor-detail.html">Team Detail</a></li>
+												<li><a href="index.html">Header Style One</a></li>
+												<li><a href="index-2.html">Header Style Two</a></li>
+												<li><a href="index-3.html">Header Style Three</a></li>
 											</ul>
-										</li> -->
-									</ul>
-								</li>
-
-								<li class="dropdown"><a href="#">Resources</a> <!--  class="dropdown" -->
-									<ul>
-										<li><a href="#time-table">Time Tables</a></li>  <!--href="services.html" -->
-										<li><a>Old Question Papers</a></li> <!--href="service-detail.html"-->
-										<li><a>Syllabus</a></li>
-										<li><a>Courses</a></li>
-										<li><a>Others</a></li>
-										
-									</ul>
-								</li>
-
-								<li class="dropdown"><a href="#">Staff</a>
-									<ul>
-										<li><a>Mentors</a></li>
-										<li><a>Teaching</a></li> <!--  href="services.html" -->
-										<li><a>Non-Teaching</a></li> <!--  href="service-detail.html" -->
-									</ul>
-								</li>
-								<li class="dropdown"><a href="#">Events</a>
-									<ul>
-										<li><a href="./events.html">Technical Events</a></li> <!--  href="portfolio.html"-->
-										<li><a>Cultural Events</a></li> <!--  href="portfolio-detail.html" -->
-									</ul>
-								</li>
-								<li class="dropdown"><a href="#">Student Life</a>
-									<ul>
-										<li><a href="courses.html">Infrastructure</a></li> <!--  href="courses.html" -->
-										<li><a>Clubs</a></li>
-										<li><a>ICC</a></li>
-										<li><a>NSS</a></li>
-										<li><a>NCC</a></li>
-										<li><a>Yoga</a></li>
-										<!-- <li><a href="course-detail.html">Courses Detail</a></li> -->
-									</ul>
-								</li>
-								<!-- <li class="dropdown"><a href="#">Blog</a>
-									<ul>
-										<li><a href="blog.html">Our Blog</a></li>
-										<li><a href="blog-detail.html">Blog Detail</a></li>
+										</li>
 									</ul>
 								</li> -->
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</nav>
-
-					
-					<!-- Main Menu End-->
-					<div class="outer-box clearfix">
+									<li class="dropdown"><a href="#">About Department</a>
+										<ul>
+											<li><a href="#one-tab">Vision</a></li> <!--href="about.html" -->
+											<li><a href="#two-tab">Mission</a></li> <!-- href="faq.html" -->
+											<li><a href="#three-tab">PEO's</a></li>  <!-- href="price.html" -->
+											<li><a href="#four-tab">PSO's</a></li>
+											<li><a href="#five-tab">PO's</a></li>
+											<!-- <li class="dropdown"><a href="#">Our Team</a>
+												<ul>
+													<li><a href="mentors.html">Team</a></li>
+													<li><a href="mentor-detail.html">Team Detail</a></li>
+												</ul>
+											</li> -->
+										</ul>
+									</li>
+	
+									<li class="dropdown"><a href="#">Resources</a> <!--  class="dropdown" -->
+										<ul>
+											<li><a href="#time-table">Time Tables</a></li>  <!--href="services.html" -->
+											<li><a>Old Question Papers</a></li> <!--href="service-detail.html"-->
+											<li><a></a></li>
+										</ul>
+									</li>
+	
+									<li class="dropdown"><a href="#">Staff</a>
+										<ul>
+											<li><a>Mentors</a></li>
+											<li><a>Teaching</a></li> <!--  href="services.html" -->
+											<li><a>Non-Teaching</a></li> <!--  href="service-detail.html" -->
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">Events</a>
+										<ul>
+											<li><a href="./events.html">Technical Events</a></li> <!--  href="portfolio.html"-->
+											<li><a>Cultural Events</a></li> <!--  href="portfolio-detail.html" -->
+										</ul>
+									</li>
+									<li class="dropdown"><a href="#">Student Life</a>
+										<ul>
+											<li><a>Sports</a></li> <!--  href="courses.html" -->
+											<li><a>Clubs</a></li>
+											<li><a>ICC</a></li>
+											<li><a>NSS</a></li>
+											<li><a>NCC</a></li>
+											<li><a>Yoga</a></li>
+											<!-- <li><a href="course-detail.html">Courses Detail</a></li> -->
+										</ul>
+									</li>
+									<!-- <li class="dropdown"><a href="#">Blog</a>
+										<ul>
+											<li><a href="blog.html">Our Blog</a></li>
+											<li><a href="blog-detail.html">Blog Detail</a></li>
+										</ul>
+									</li> -->
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+	
 						
-						<!-- Search Btn -->
-						<!-- <div class="search-box-btn transition-300ms"><span class="icon fa fa-search"></span></div> -->
-						
-						<!-- Nav Btn -->
-						<div class="nav-btn navSidebar-button transition-300ms"><span class="icon flaticon-menu-1"></span></div>
+						<!-- Main Menu End-->
+						<div class="outer-box clearfix">
 							
+							<!-- Search Btn -->
+							<!-- <div class="search-box-btn transition-300ms"><span class="icon fa fa-search"></span></div> -->
+							
+							<!-- Nav Btn -->
+							<div class="nav-btn navSidebar-button transition-300ms"><span class="icon flaticon-menu-1"></span></div>
+								
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- End Header Lower -->
+			
+			<!-- Sticky Header  -->
+			<div class="sticky-header">
+				<div class="auto-container clearfix">
+					<!--Logo-->
+					<div class="logo pull-left">
+						<a href="index.html" title=""><img src="assets/images/aiml-2-removebg-preview.png" alt="" title=""></a>
+					</div>
+					<!--Right Col-->
+					<div class="pull-right">
+					
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<!--Keep This Empty / Menu will come through Javascript-->
+						</nav>
+						<!-- Main Menu End-->
+						
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+						
 					</div>
 				</div>
+			</div><!-- End Sticky Menu -->
+		
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 				
-            </div>
-        </div>
-        <!-- End Header Lower -->
-        
-		<!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="assets/images/aiml-2-removebg-preview.png" alt="" title=""></a>
-                </div>
-                <!--Right Col-->
-                <div class="pull-right">
-				
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav>
-					<!-- Main Menu End-->
-					
-					<!-- Mobile Navigation Toggler -->
-					<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
-					
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-    
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-            
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div><!-- End Mobile Menu -->
-	
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div>
+					<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+				</nav>
+			</div><!-- End Mobile Menu -->
     </header>
     <!-- End Main Header -->
 	
@@ -499,16 +550,16 @@
 							</div>
 							<div class="content-box">
 								<h4>About Us</h4>
-								<p class="text">I am glad that you have made it here to send a distress signal, and inform the Senate that all on board killed. Dantooine. I’m not going to Alderaan. I really got to go. But that to me.</p>
-								<a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Consultation</span></a>
+								<p class="text">The Department of CSE (Artificial Intelligence and Machine Learning) offers B. Tech degree, which was established in the year 2022 with a mission of producing students with a sound understanding of the fundamentals of both theory and practice of Artificial Intelligence and Machine Learning. The mission is also to mold them to attain excellent leadership qualities thereby making them competent in the software, hardware and research arena.</p>
+								<a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Contact</span></a>
 							</div>
 							<div class="contact-info">
 								<h4>Contact Info</h4>
 								<ul class="list-style-one">
-									<li><span class="icon fa fa-location-arrow"></span>Chicago 12, Melborne City, USA</li>
-									<li><span class="icon fa fa-phone"></span>(111) 111-111-1111</li>
-									<li><span class="icon fa fa-envelope"></span>avarton@gmail.com</li>
-									<li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 18.00 Sunday: Closed</li>
+									<li><span class="icon fa fa-location-arrow"></span>Kanuru,Vijayawada-520 007</li>
+									<li><span class="icon fa fa-phone"></span>0866-2581699</li>
+									<li><span class="icon fa fa-envelope"></span>principal@pvpsiddhartha.ac.in</li>
+									<li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 17.00 Sunday: Closed</li>
 								</ul>
 							</div>
 							<!-- Social Box -->
@@ -526,42 +577,25 @@
 		</div>
 	</div>
 	<!-- END sidebar widget item -->
-
-	
 	<section class="custom-section"></section>
+	<!-- Start slider -->
+	<div id="slider">
+		<img class="slider-image" src="./assets/images/main-slider/1.png" alt="Slide 1">
+		<img class="slider-image" src="./assets/images/main-slider/2.png" alt="Slide 2">
+		<img class="slider-image" src="./assets//images/main-slider/3.png" alt="Slide 3">
+		<img class="slider-image" src="./assets//images/main-slider/4.png" alt="Slide 3">
+		<button id="prevBtn" onclick="prevSlide()"><</button>
+		<button id="nextBtn" onclick="nextSlide()">></button>
+	</div>
+	<!-- End slider -->
 
-	<!-- Slider  -->
-	<div class="slider" style="height: 60vh;">
-        <div class="list">
-            <div class="item">
-                <img src="./assets/images/main-slider/4.png" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/images/main-slider/girls.png" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/images/main-slider/1.png" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/images/main-slider/2.png" alt="">
-            </div>
-            <div class="item">
-                <img src="./assets/images/main-slider/AIML class 2.png" alt="">
-            </div>
-        </div>
-        <div class="buttons">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-        <ul class="dots">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
+	<!-- <div id="news-ticker">
+        <marquee behavior="scroll" direction="up" scrollamount="3">
+            <ul id="news-list">
+                News items will be inserted here
+            </ul>
+        </marquee>
+    </div> -->
 
 	<section id="aiml-tabs" style="height: 50vh; width: 100%; display: inline; padding-bottom: 20px;">
 	<h2></h2>
@@ -572,6 +606,13 @@
   <input class="radio" id="three" name="group" type="radio">
   <input class="radio" id="four" name="group" type="radio">
   <input class="radio" id="five" name="group" type="radio">
+  <input class="radio" id="six" name="group" type="radio">
+  <input class="radio" id="seven" name="group" type="radio">
+  <input class="radio" id="eight" name="group" type="radio">
+  <input class="radio" id="nine" name="group" type="radio">
+  <input class="radio" id="ten" name="group" type="radio">
+  <input class="radio" id="eleven" name="group" type="radio">
+  <input class="radio" id="twelve" name="group" type="radio">
   <div id="tabs" class="tabs">
   <label class="tab" id="zero-tab" for="zero">About Department</label>
   <label class="tab" id="one-tab" for="one">Vision</label>
@@ -579,6 +620,13 @@
   <label class="tab" id="three-tab" for="three">PEO's</label> 
   <label class="tab" id="four-tab" for="four">PSO's</label>
   <label class="tab" id="five-tab" for="five">PO's</label>
+  <label class="tab" id="six-tab" for="six">Mentor & Mentees</label>
+  <label class="tab" id="seven-tab" for="seven">Technical Events</label>
+  <label class="tab" id="eight-tab" for="eight">Cultural Events</label>
+  <label class="tab" id="nine-tab" for="nine">Teaching Staff</label>
+  <label class="tab" id="ten-tab" for="ten">Infrastructure</label>
+  <label class="tab" id="eleven-tab" for="eleven">Gallery</label>
+  <label class="tab" id="twelve-tab" for="twelve">Gallery</label>
     </div>
   <div class="panels">
 	<div class="panel" id="zero-panel">
@@ -623,7 +671,49 @@
 		<br/><strong>Project Management and Finance</strong> : Apply engineering and management principles to project management.
 		<br/><strong>Life-long Learning</strong> : Recognize and engage in lifelong learning amidst technological change.</p>
   </div>
-
+  <!-- six -->
+  <div class="panel" id="six-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- seven -->
+  <div class="panel" id="seven-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- eight -->
+  <div class="panel" id="eight-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- nine -->
+  <div class="panel" id="nine-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- ten -->
+  <div class="panel" id="ten-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- eleven -->
+  <div class="panel" id="eleven-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- twelve -->
+  <div class="panel" id="twelve-panel">
+    <div class="panel-title">PSO's</div>
+    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  </div>
+  <!-- end -->
   </div>
 </div>
 </section>
@@ -1341,45 +1431,80 @@
 <!-- End Header Search -->
 <!-- Slider javascript  -->
 <script>
-let slider = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let dots = document.querySelectorAll('.slider .dots li');
+ let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider-image');
+  const totalSlides = slides.length;
 
-let lengthItems = items.length - 1;
-let active = 0;
-next.onclick = function(){
-    active = active + 1 <= lengthItems ? active + 1 : 0;
-    reloadSlider();
+  function showSlide(n) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[n].style.display = 'block';
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function autoplay() {
+    setInterval(nextSlide, 3000); // Adjust autoplay speed as needed (milliseconds)
+  }
+
+
+  showSlide(currentSlide);
+  autoplay();
+
+
+
+//   news upscrool
+document.addEventListener('DOMContentLoaded', function() {
+    setupSlider();
+    setupNewsTicker();
+});
+
+function setupSlider() {
+    // Your slider setup code goes here
 }
-prev.onclick = function(){
-    active = active - 1 >= 0 ? active - 1 : lengthItems;
-    reloadSlider();
+
+function setupNewsTicker() {
+    const newsList = document.getElementById('news-list');
+
+    // Example news items
+    const newsItems = [
+        { title: 'Breaking News 1', url: '#' },
+        { title: 'Breaking News 2', url: '#' },
+        { title: 'Breaking News 3', url: '#' },
+        // Add more news items as needed
+    ];
+
+    // Populate the news ticker with news items
+    newsItems.forEach(item => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.textContent = item.title;
+        link.href = item.url;
+        listItem.appendChild(link);
+        newsList.appendChild(listItem);
+    });
+
+    // Scroll the news ticker upwards
+    let tickerPosition = 0;
+    setInterval(function() {
+        tickerPosition -= 1;
+        newsList.style.top = tickerPosition + 'px';
+
+        // Reset the ticker position if it goes beyond the container height
+        if (Math.abs(tickerPosition) >= newsList.clientHeight) {
+            tickerPosition = 0;
+            newsList.style.top = tickerPosition + 'px';
+        }
+    }, 50); // Adjust the scroll speed as needed
 }
-let refreshInterval = setInterval(()=> {next.click()}, 3000);
-function reloadSlider(){
-    slider.style.left = -items[active].offsetLeft + 'px';
-    // 
-    let last_active_dot = document.querySelector('.slider .dots li.active');
-    last_active_dot.classList.remove('active');
-    dots[active].classList.add('active');
 
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next.click()}, 3000);
-
-    
-}
-
-dots.forEach((li, key) => {
-    li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
-    })
-})
-window.onresize = function(event) {
-    reloadSlider();
-};
 </script>
 
 <!-- Scroll To Top -->

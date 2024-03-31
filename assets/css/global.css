@@ -634,6 +634,8 @@ h6{
 	max-width:1240px;
 	padding:0px 15px;
 	margin:0 auto;
+	margin-top: -21px;
+    margin-bottom: -10px;
 }
 
 .medium-container{
