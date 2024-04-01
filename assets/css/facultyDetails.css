@@ -13,7 +13,7 @@
 }
 
 .faculty-table th {
-    background-color: #92c9e6;
+    background-color: #e54530;
     color: #ffffff;
 }
 
@@ -23,6 +23,9 @@
 
 .faculty-name {
     font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: start;
 }
 
 .faculty-profile-link a {

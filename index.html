@@ -45,11 +45,18 @@
     }
 	@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
 
+	#aiml-tabs {
+		font-family: var(--font-family-gilroy);;
+	}
+
+.panel-title p {
+	color: yellow !important;
+}
 	#aiml-tabs .warpper{
   display:flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 190);
 }
 #aiml-tabs .tab{
   cursor: pointer;
@@ -76,6 +83,7 @@
 #aiml-tabs .panel{
   display:none;
   animation: fadein .8s;
+  text-align: justify;
 }
 #aiml-tabs .warpper {
 	background-image: url(./assets/images/background/pattern-2.png);
@@ -126,9 +134,10 @@
 #ten:checked ~ .tabs #ten-tab,
 #eleven:checked ~ .tabs #eleven-tab,
 #twelve:checked ~ .tabs #twelve-tab {
-  background-color: #3498db;
-  color: #2c3e50;
-  border-top: 3px solid #2980b9;
+	background-color: #1d8c68;
+    color: #ffffff;
+    font-size: 16px;
+    border-top: 3px solid #2980b9;
 }
 
 /* Panel styles */
@@ -149,74 +158,14 @@
 }
 
 /* Individual panel styles */
-#zero-panel {
-  background-color: #3498db;
-  color: #2c3e50;
-}
-
-#one-panel {
-  background-color: #2ecc71;
-  color: #34495e;
-}
-
-#two-panel {
-  background-color: #e74c3c;
-  color: #2c3e50;
-}
-
-#three-panel {
-  background-color: #9b59b6;
-  color: #34495e;
-}
-
-#four-panel {
-  background-color: #f39c12;
-  color: #2c3e50;
-}
-
-#five-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#six-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#seven-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#eight-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#nine-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#ten-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#eleven-panel {
-  background-color: #1abc9c;
-  color: #34495e;
-}
-
-#twelve-panel {
-  background-color: #1abc9c;
-  color: #34495e;
+.panel {
+	background-color: white;
+	color: black;
 }
 
 
 .panel p {
-  color: white;
+  color: black;
 }
 
 .panel {
@@ -429,51 +378,57 @@
 										</li>
 									</ul>
 								</li> -->
-									<li class="dropdown"><a href="#">About Department</a>
-										<ul>
-											<li><a href="#one-tab">Vision</a></li> <!--href="about.html" -->
-											<li><a href="#two-tab">Mission</a></li> <!-- href="faq.html" -->
-											<li><a href="#three-tab">PEO's</a></li>  <!-- href="price.html" -->
+									<li ><a href="#aiml-tabs">About Department</a> <!-- class="dropdown"-->
+										<!-- <ul>
+											<li><a href="#one-tab">Vision</a></li> href="about.html"
+											<li><a href="#two-tab">Mission</a></li> href= "faq.html"
+											<li><a href="#three-tab">PEO's</a></li>  href="price.html"
 											<li><a href="#four-tab">PSO's</a></li>
 											<li><a href="#five-tab">PO's</a></li>
-											<!-- <li class="dropdown"><a href="#">Our Team</a>
+											<li class="dropdown"><a href="#">Our Team</a>
 												<ul>
 													<li><a href="mentors.html">Team</a></li>
 													<li><a href="mentor-detail.html">Team Detail</a></li>
 												</ul>
-											</li> -->
-										</ul>
+											</li>
+										</ul> -->
 									</li>
 	
-									<li class="dropdown"><a href="#">Resources</a> <!--  class="dropdown" -->
-										<ul>
-											<li><a href="#time-table">Time Tables</a></li>  <!--href="services.html" -->
-											<li><a>Old Question Papers</a></li> <!--href="service-detail.html"-->
+							 <!--  class="dropdown" -->
+										<!-- <ul>
+											<li><a href="#time-table">Time Tables</a></li>  href="services.html"
+											<li><a>Old Question Papers</a></li> href="service-detail.html"
 											<li><a></a></li>
-										</ul>
+										</ul> -->
 									</li>
+									<li><a target="_blank" href="https://www.pvpsiddhartha.ac.in/syllabus_csm_20.html">Course Structure & Syllabus</a></li>
+									<li><a target="_blank" href="https://www.pvpsiddhartha.ac.in/dep_csm/docs/II-IITime_Table_23-24.pdf">Time Tables</a></li>
+										
 	
-									<li class="dropdown"><a href="#">Staff</a>
+									<!-- <li class="dropdown"><a href="#">Staff</a>
 										<ul>
 											<li><a>Mentors</a></li>
-											<li><a>Teaching</a></li> <!--  href="services.html" -->
-											<li><a>Non-Teaching</a></li> <!--  href="service-detail.html" -->
+											<li><a>Teaching</a></li>  href="services.html"
+											<li><a>Non-Teaching</a></li>  href="service-detail.html"
 										</ul>
-									</li>
-									<li class="dropdown"><a href="#">Events</a>
+									</li> -->
+									<!-- <li class="dropdown"><a href="#">Events</a>
 										<ul>
-											<li><a href="./events.html">Technical Events</a></li> <!--  href="portfolio.html"-->
-											<li><a>Cultural Events</a></li> <!--  href="portfolio-detail.html" -->
+											<li><a href="./events.html">Technical Events</a></li>  href="portfolio.html"
+											<li><a>Cultural Events</a></li>  href="portfolio-detail.html"
 										</ul>
-									</li>
+									</li> -->
+
+									<li><a href="infrastructure.html">Labs</a></li>
+									<li><a href="infrastructure.html">Classrooms</a></li>
+									<li><a href="infrastructure.html">Gallery</a></li>
 									<li class="dropdown"><a href="#">Student Life</a>
 										<ul>
-											<li><a>Sports</a></li> <!--  href="courses.html" -->
-											<li><a>Clubs</a></li>
-											<li><a>ICC</a></li>
-											<li><a>NSS</a></li>
-											<li><a>NCC</a></li>
-											<li><a>Yoga</a></li>
+											<li><a target="_blank" href="https://www.pvpsiddhartha.ac.in/department_sport.html">Sports</a></li> <!--  href="courses.html" -->
+											<li><a target="_blank" href="https://www.pvpsiddhartha.ac.in/collegeculturalclub.html">Cultural Clubs</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/nss.html#" target="_blank">NSS</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/ncc.html" target="_blank">NCC</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/yoga_n.html" target="_blank">Yoga</a></li>
 											<!-- <li><a href="course-detail.html">Courses Detail</a></li> -->
 										</ul>
 									</li>
@@ -509,9 +464,9 @@
 			<div class="sticky-header">
 				<div class="auto-container clearfix">
 					<!--Logo-->
-					<div class="logo pull-left">
+					<!-- <div class="logo pull-left">
 						<a href="index.html" title=""><img src="assets/images/aiml-2-removebg-preview.png" alt="" title=""></a>
-					</div>
+					</div> -->
 					<!--Right Col-->
 					<div class="pull-right">
 					
@@ -534,7 +489,7 @@
 				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 				
 				<nav class="menu-box">
-					<div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div>
+					<!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div> -->
 					<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 				</nav>
 			</div><!-- End Mobile Menu -->
@@ -591,16 +546,16 @@
 	<section class="custom-section"></section>
 	<div id="news-container">
 		<div class="news red full-width">
-			<span>Breaking News</span>
+			<span>Latest News</span>
 			<ul class="scrollLeft">
-			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Mid exams start from </a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
 			<li><a href="#">Text 3 - Short Description</a></li>
 			<li><a href="#">Text 4 - Short Description</a></li>
 			</ul>
 		</div>
 		<div class="news yellow full-width">
-			<span>Breaking News</span>
+			<span>Semester News</span>
 			<ul class="scrollLeft">
 			<li><a href="#">Text 1 - Short Description</a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
@@ -609,7 +564,7 @@
 			</ul>
 		</div>
 		<div class="news blue full-width">
-			<span>Breaking News</span>
+			<span>Cultural News</span>
 			<ul class="scrollLeft">
 			<li><a href="#">Text 1 - Short Description</a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
@@ -618,7 +573,7 @@
 			</ul>
 		</div>
 		<div class="news green full-width">
-			<span>Breaking News</span>
+			<span>Notification News</span>
 			<ul class="scrollLeft">
 			<li><a href="#">Text 1 - Short Description</a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
@@ -627,7 +582,34 @@
 			</ul>
 		</div>
 		<div class="news magenta full-width">
-			<span>Breaking News</span>
+			<span>Holiday News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news red full-width">
+			<span>JVD News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news yellow full-width">
+			<span>NSS News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news green full-width">
+			<span>Sports News</span>
 			<ul class="scrollLeft">
 			<li><a href="#">Text 1 - Short Description</a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
@@ -636,34 +618,7 @@
 			</ul>
 		</div>
 		<div class="news magenta full-width">
-			<span>Breaking News</span>
-			<ul class="scrollLeft">
-			<li><a href="#">Text 1 - Short Description</a></li>
-			<li><a href="#">Text 2 - Short Description</a></li>
-			<li><a href="#">Text 3 - Short Description</a></li>
-			<li><a href="#">Text 4 - Short Description</a></li>
-			</ul>
-		</div>
-		<div class="news magenta full-width">
-			<span>Breaking News</span>
-			<ul class="scrollLeft">
-			<li><a href="#">Text 1 - Short Description</a></li>
-			<li><a href="#">Text 2 - Short Description</a></li>
-			<li><a href="#">Text 3 - Short Description</a></li>
-			<li><a href="#">Text 4 - Short Description</a></li>
-			</ul>
-		</div>
-		<div class="news magenta full-width">
-			<span>Breaking News</span>
-			<ul class="scrollLeft">
-			<li><a href="#">Text 1 - Short Description</a></li>
-			<li><a href="#">Text 2 - Short Description</a></li>
-			<li><a href="#">Text 3 - Short Description</a></li>
-			<li><a href="#">Text 4 - Short Description</a></li>
-			</ul>
-		</div>
-		<div class="news magenta full-width">
-			<span>Breaking News</span>
+			<span>Event News</span>
 			<ul class="scrollLeft">
 			<li><a href="#">Text 1 - Short Description</a></li>
 			<li><a href="#">Text 2 - Short Description</a></li>
@@ -674,10 +629,13 @@
 	</div>
 	<!-- Start slider -->
 	<div id="slider">
-		<img class="slider-image" src="./assets/images/main-slider/1.png" alt="Slide 1">
+		<img class="slider-image" src="./assets/images/main-slider/4.png" alt="Slide 1">
+		<img class="slider-image" src="./assets/images/main-slider/girls.png" alt="Slide 1">
 		<img class="slider-image" src="./assets/images/main-slider/2.png" alt="Slide 2">
 		<img class="slider-image" src="./assets//images/main-slider/3.png" alt="Slide 3">
-		<img class="slider-image" src="./assets//images/main-slider/4.png" alt="Slide 3">
+		<img class="slider-image" src="./assets/images/gallery/fest2.jpg" alt="Slide 3">
+		<img class="slider-image" src="./assets/images/gallery/fest3.jpg" alt="Slide 3">
+		<img class="slider-image" src="./assets/images/gallery/fest7.jpg" alt="Slide 3">
 		<button id="prevBtn" onclick="prevSlide()"><</button>
 		<button id="nextBtn" onclick="nextSlide()">></button>
 	</div>
@@ -719,7 +677,7 @@
     </div>
   <div class="panels">
 	<div class="panel" id="zero-panel">
-		<div class="panel-title">About</div>
+		<div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">About the Department</h4></div>
 		<p style="color: #000;">The Department of CSE (Artificial Intelligence and Machine Learning) offers B. Tech degree, which was established in the year 2022 with a mission of producing students with a sound understanding of the fundamentals of both theory and practice of Artificial Intelligence and Machine Learning. The mission is also to mold them to attain excellent leadership qualities thereby making them competent in the software, hardware and research arena.</p>
 
 			<p style="color: #000;">The College Academic Council, Board of Studies of the department strives to provide quality education and the most advanced curriculum and syllabus to make the students industry ready and excel in the contemporary business world.</p>
@@ -727,27 +685,27 @@
 		   <p style="color: #000;">The department has qualified, committed and research-oriented faculty members. Faculty members of the department are very enthusiastic about research activities and very keen on publishing papers in International/National journals. Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. The field of artificial intelligence has been an interdisciplinary endeavor, requiring deep knowledge of both computational and human sciences. Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it to learn for themselves.</p>
 	  </div>
   <div class="panel" id="one-panel">
-    <div class="panel-title">Vision </div>
-    <p>Our vision is to excel as a hub of academic and research excellence in Artificial Intelligence and Machine Learning, embracing challenges to drive societal advancement through innovation and collaboration.</p>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">Vision</h4> </div>
+    <p style="text-align: center; margin: 0;">To be a centre of excellence in academics and research in Artificial Intelligence and Machine Learning and take up challenges for the benefit of society.</p>
   </div>
   <div class="panel" id="two-panel">
-    <div class="panel-title">Mission</div>
-    <p>Our Mission is provide industry-aligned education, instilling ethics, research skills, teamwork, and leadership qualities for national progress in a dynamic global environment.</p>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">Mission</h4></div>
+    <p style="text-align: center; margin: 0;">Our Mission is provide industry-aligned education, instilling ethics, research skills, teamwork, and leadership qualities for national progress in a dynamic global environment.</p>
   </div>
   <div class="panel" id="three-panel">
-    <div class="panel-title">PEO's</div>
-    <p style="color: #000;"><strong>PEO-I</strong>: Graduates will demonstrate proficiency in fundamental AI and ML concepts, along with advanced computer science principles.<br/><br/>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">PEO'S</h4></div>
+    <p  style="color: #000; margin: 0;"><strong>PEO-I</strong>: Graduates will demonstrate proficiency in fundamental AI and ML concepts, along with advanced computer science principles.<br/><br/>
 		<strong>PEO-II</strong>: Graduates will pursue successful careers in the computing industry or pursue advanced studies in AI, ML, or related fields.<br/><br/>
 		<strong>PEO-III</strong>: Graduates will exhibit strong teamwork, ethical conduct, effective communication skills, and actively contribute to societal welfare through AI and ML applications.</p>
   </div>
   <div class="panel" id="four-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center;  text-transform: uppercase; margin-top: 0;">PSO'S</h4></div>
+    <p style="margin: 0;"><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
 		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
   </div>
   <div class="panel" id="five-panel">
-    <div class="panel-title">PO's</div>
-    <p style="color: #000;"><br/><strong> Knowledge </strong>: Apply mathematics, science, and engineering fundamentals to solve complex problems.
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center;  text-transform: uppercase; margin-top: 0;">PO'S</h4></div>
+    <p style="color: #000; margin: 0;"><br/><strong> Knowledge </strong>: Apply mathematics, science, and engineering fundamentals to solve complex problems.
 		<br/><strong>Problem Analysis</strong> : Identify, formulate, and analyze engineering problems, drawing from research literature.
 		<br/><strong>Design Solutions</strong> : Develop solutions considering health, safety, societal, and environmental factors.
 		<br/><strong>Conduct Investigations</strong> : Use research methods to analyze data and draw valid conclusions.
@@ -762,7 +720,7 @@
   </div>
   <!-- jmentor and mentees six -->
   <div class="panel" id="six-panel">
-    <div class="panel-title">Mentors and Mentee</div>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 20px; text-transform: uppercase; margin-top: 0;">Mentors and Mentee</h4></div>
 	<table class="mentor-table">
 		<thead>
 			<tr class="mentor-table-row">
@@ -797,7 +755,7 @@
   </div>
   <!-- Teaching Staff -->
   <div class="panel" id="eight-panel">
-    <div class="panel-title">Technical Events</div>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">Technical Events</h4></div>
 	<section class="event-table-container">
         <table class="event-table">
             <thead>
@@ -805,59 +763,88 @@
                     <th class="sl-no">SL.NO</th>
                     <th class="description">DESCRIPTION</th>
                     <th class="resource-person">RESOURCE PERSON</th>
-                    <th class="coordinators">CO ORDINATORS</th>
+                    <th class="coordinators">COORDINATORS</th>
                     <th class="links">LINKS</th>
                 </tr>
             </thead>
             <tbody>
+
+				
+				<tr class="table-row">
+					<td class="sl-no">&nbsp;1</td>
+					<td class="description">&nbsp;On the eve of SITAR 2K24 <b>“Crack the Code”</b> event organized by Department of CSE (AI &amp; ML) on <strong> 6<sup>th</sup> March 2024</strong></td>
+					<td class="resource-person"></td>
+					<td class="coordinators">
+						<span>Mrs. M. Susmitha</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)<br><br>
+						<span>Mr. M. Winson</span>,<br>Asst. Prof., Dept. of CSE( Data Science)<br><br>
+						<span>Mr. K. Chiranjeevi</span><br>Asst. Prof., Dept. of CSE( Data Science) <BR></BR>
+						<span>Mrs. P. Sujatha</span>,<br>Asst. Prof., Dept. of CSE (AI &amp; ML)<br><br>
+                        <span>Mr. Ch. Naresh</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)
+					</td>
+					<td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+				</tr>
+
+				<tr class="table-row">
+					<td class="sl-no">&nbsp;2</td>
+					<td class="description">&nbsp;On the eve of SITAR 2K24<b>“Technical Paper Presentation”</b> organized by Department of CSE (AI &amp; ML) <strong> 6<sup>th</sup> March 2024</strong></td>
+					<td class="resource-person"></td>
+					<td class="coordinators">
+						<span>Mr. G. Venkata Krishna</span><br>Coordinators of the event<br><br>
+						<span>Mrs. R. Padmaja</span>,<br>Coordinators of the event<br><br>
+                        <span>Mr. Ch. Naresh</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)
+					</td>
+					<td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+				</tr>
+				
                 <tr class="table-row">
-                    <td class="sl-no">&nbsp;1</td>
+                    <td class="sl-no">&nbsp;3</td>
                     <td class="description">&nbsp;One day <b>“Technical Paper Presentation”</b> was organized by Department of CSE (AI &amp; ML) <strong> 4<sup>th</sup> November 2023</strong></td>
                     <td class="resource-person"></td>
                     <td class="coordinators">
-                        <span style="color: blue">Mrs. M. Susmitha</span><br>Assistant Professor, CSE (AI &amp; ML)<br><br>
-                        <span style="color: blue">Mrs. P. Sujatha</span>,<br>Assistant Professor, Dept. of CSE( Data Science)<br><br>
-                    </td>
-                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
-                </tr>
-                <tr class="table-row">
-                    <td class="sl-no">&nbsp;2</td>
-                    <td class="description">&nbsp;Webinar on <b>“API and Chatbots”</b> was organized by Dept. of CSE (AI &amp; ML) in association with PVPSIT NDLI CLUB on 28 th October 2023</td>
-                    <td class="resource-person"></td>
-                    <td class="coordinators">
-                        <span style="color: blue">Ms. Rishika Bhatia</span><br>Technical Consulting Engineer, CISCO Systems India Pvt Ltd. Bengaluru<br><br>
-                        <span style="color: blue">Mr. Ravi Shankar Krishna</span><br>Technical Consulting Engineer CISCO Systems India Pvt Ltd. Bengaluru
-                    </td>
-                    <td class="links">&nbsp;<a href="https://drive.google.com/file/d/1ehMKgisTPIkAEZRAUaYs1ucOb-0OkQCC/view?usp=sharing" target="_blank">Click here for Details on Event</a></td>
-                </tr>
-                <tr class="table-row">
-                    <td class="sl-no">&nbsp;3</td>
-                    <td class="description">&nbsp;<b>“Technical Quiz”</b> was organized by CSE (AI &amp; ML) in association with ISTE Student Chapter on 13 th September 2023</td>
-                    <td class="resource-person"></td>
-                    <td class="coordinators">
-                        <span style="color: blue">Mr. Ch. Naresh</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)<br><br>
-                        <span style="color: blue">Mrs. Ch. P. Nagamani</span><br>Assistant Professor, Dept. of CSE(Data Science)
+                        <span>Mrs. M. Susmitha</span><br>Asst. Prof., CSE (AI &amp; ML)<br><br>
+                        <span>Mrs. P. Sujatha</span>,<br>Asst. Prof., Dept. of CSE( Data Science)<br><br>
                     </td>
                     <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
                 </tr>
                 <tr class="table-row">
                     <td class="sl-no">&nbsp;4</td>
-                    <td class="description">&nbsp;Ten Days Workshop on <b>“Problem Solving with Data Structures”</b> was organized by Department of CSE (AI &amp; ML) from 06 th August 2023 to 15 th August 2023.</td>
-                    <td class="resource-person"><span style="color: blue">Ms. Armadhaa R</span><br>Senior Technical Trainer BYTS, Hyderabad</td>
+                    <td class="description">&nbsp;Webinar on <b>“API and Chatbots”</b> was organized by Dept. of CSE (AI &amp; ML) in association with PVPSIT NDLI CLUB on 28 th October 2023</td>
                     <td class="coordinators">
-                        <span style="color: blue">Mrs. Ch. P. Nagamani</span><br>Assistant Professor, Dept. of CSE(Data Science)<br><br>
-                        <span style="color: blue">Mr. K. Chiranjeevi</span>,<br>Assistant Professor, Dept. of CSE( Data Science)<br><br>
-                        <span style="color: blue">Mrs. P. Hema Venkata Ramana</span><br>Assistant Professor, Dept. of CSE( Data Science)
+						<span style="color: blue">Ms. Rishika Bhatia <span style="color: black;">and</span> </span><br>
+                        <span style="color: blue">Mr. Ravi Shankar Krishna</span><br>Technical Consulting Engineers <br> <span style="color: red;">CISCO Systems</span> India Pvt Ltd. Bengaluru
+                    </td>
+					<td class="resource-person">Mr. Winson M <br>
+						Asst. Prof., Dept. of CSE(Data Science)</td>
+                    <td class="links">&nbsp;<a href="https://drive.google.com/file/d/1ehMKgisTPIkAEZRAUaYs1ucOb-0OkQCC/view?usp=sharing" target="_blank">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;5</td>
+                    <td class="description">&nbsp;<b>“Technical Quiz”</b> was organized by CSE (AI &amp; ML) in association with ISTE Student Chapter on 13 th September 2023</td>
+                    <td class="resource-person"></td>
+                    <td class="coordinators">
+                        <span>Mr. Ch. Naresh</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)<br><br>
+                        <span>Mrs. Ch. P. Nagamani</span><br>Asst. Prof., Dept. of CSE(Data Science)
                     </td>
                     <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
                 </tr>
                 <tr class="table-row">
-                    <td class="sl-no">&nbsp;5</td>
+                    <td class="sl-no">&nbsp;6</td>
+                    <td class="description">&nbsp;Ten Days Workshop on <b>“Problem Solving with Data Structures”</b> was organized by Department of CSE (AI &amp; ML) from 06 th August 2023 to 15 th August 2023.</td>
+                    <td class="resource-person"><span style="color: blue">Ms. Armadhaa R</span><br>Senior Technical Trainer BYTS, Hyderabad</td>
+                    <td class="coordinators">
+                        <span>Mrs. Ch. P. Nagamani</span><br>Asst. Prof., Dept. of CSE(Data Science)<br><br>
+                        <span>Mr. K. Chiranjeevi</span>,<br>Asst. Prof., Dept. of CSE( Data Science)<br><br>
+                        <span>Mrs. P. Hema Venkata Ramana</span><br>Asst. Prof., Dept. of CSE( Data Science)
+                    </td>
+                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;7</td>
                     <td class="description">&nbsp;One-week Short Term Training Programme (STTP) on <b>“Object Oriented Programming through JAVA”</b> was organized by Department of CSE (AI &amp; ML) from 28 th July 2023 to 03 rd August 2023</td>
                     <td class="resource-person"><span style="color: blue">Mr. Srikanth</span><br>Lead Engineer, EPAM Systems Inc. Hyderabad</td>
                     <td class="coordinators">
-                        <span style="color: blue">Mr. Ch. Naresh</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)<br><br>
-                        <span style="color: blue">Mrs. R. Padmaja</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)
+                        <span>Mr. Ch. Naresh</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)<br><br>
+                        <span>Mrs. R. Padmaja</span><br>Asst. Prof., Dept. of CSE (AI &amp; ML)
                     </td>
                     <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
                 </tr>
@@ -868,10 +855,11 @@
   </div>
   <!-- eight -->
   <div class="panel" id="seven-panel">
-    <div class="panel-title">Teaching Staff</div>
+    <div class="panel-title"><h4 style="color: #1d8c68; text-align: center; margin-bottom: 30px; text-transform: uppercase; margin-top: 0;">Teaching Staff</h4></div>
     <table class="faculty-table">
 		<thead>
 			<tr>
+				<th>ID</th>
 				<th>Name</th>
 				<th>Designation</th>
 				<th>Qualification</th>
@@ -881,6 +869,7 @@
 		</thead>
 		<tbody>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM100001</td>
 				<td class="faculty-name">Dr. B. Janakiramaiah</td>
 				<td class="faculty-designation">Professor & Head</td>
 				<td class="faculty-qualification">B.E(CSE), M.Tech(CSE), Ph.D(CSE)</td>
@@ -888,36 +877,41 @@
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/profile/CSM/CSM100001.pdf">Click here</a></td>
 			</tr>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM010001</td>
 				<td class="faculty-name">CH. Naresh</td>
-				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-designation">Asst. Prof.</td>
 				<td class="faculty-qualification">B. Tech., M. Tech., (Ph. D)</td>
 				<td class="faculty-email">naresh.ch@pvpsiddhartha.ac.in</td>
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010001.pdf">Click here</a></td>
 			</tr>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM010002</td>
 				<td class="faculty-name">R. Padmaja</td>
-				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-designation">Asst. Prof.</td>
 				<td class="faculty-qualification">M.Tech</td>
 				<td class="faculty-email">rpadmaja@pvpsiddhartha..ac.in</td>
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010002.pdf">Click here</a></td>
 			</tr>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM010003</td>
 				<td class="faculty-name">Ms. P. Sujatha</td>
-				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-designation">Asst. Prof.</td>
 				<td class="faculty-qualification">M.Tech</td>
 				<td class="faculty-email">psujatha@pvpsiddhartha.ac.in</td>
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010003.pdf">Click here</a></td>
 			</tr>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM010004</td>
 				<td class="faculty-name">Ms. Mandava Susmitha</td>
-				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-designation">Asst. Prof.</td>
 				<td class="faculty-qualification">M.Tech.</td>
 				<td class="faculty-email">msusmitha@pvpsiddhartha.ac.in</td>
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010004.pdf">Click here</a></td>
 			</tr>
 			<tr class="faculty-profile">
+				<td class="faculty-id">CSM010005</td>
 				<td class="faculty-name">Mr. G. Venkata Krishna</td>
-				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-designation">Asst. Prof.</td>
 				<td class="faculty-qualification">M.Tech.</td>
 				<td class="faculty-email">vkrishna@pvpsiddhartha.ac.in</td>
 				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010005.pdf">Click here</a></td>
@@ -1042,7 +1036,7 @@
 	<!-- End About Section -->
 	
 	<!-- Services Section -->
-	<section class="services-section">
+	<!-- <section id="services-section" class="services-section">
 		<div class="auto-container">
 			<div class="sec-title">
 				<div class="title color-two">Resources</div>
@@ -1051,7 +1045,7 @@
 			<div class="inner-container">
 				<div class="services-carousel owl-carousel owl-theme">
 				
-					<!-- Service Block -->
+					Service Block
 					<div class="service-block">
 						<div class="inner-box">
 							<div class="image">
@@ -1066,7 +1060,7 @@
 						</div>
 					</div>
 					
-					<!-- Service Block
+					Service Block
 					<div class="service-block translate-top">
 						<div class="inner-box">
 							<div class="image">
@@ -1080,9 +1074,9 @@
 							</div>
 						</div>
 					</div>
-					 -->
 					
-					<!-- Service Block -->
+					
+					Service Block
 					<div class="service-block">
 						<div class="inner-box">
 							<div class="image">
@@ -1097,7 +1091,7 @@
 						</div>
 					</div>
 					
-					<!-- Service Block -->
+					Service Block
 					<div class="service-block translate-top">
 						<div class="inner-box">
 							<div class="image">
@@ -1112,7 +1106,7 @@
 						</div>
 					</div>
 					
-					<!-- Service Block -->
+					Service Block
 					<div class="service-block">
 						<div class="inner-box">
 							<div class="image">
@@ -1131,7 +1125,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Services Section -->
+	End Services Section -->
 	
 	<!-- Course Section -->
 	<section class="course-section">
@@ -1490,6 +1484,7 @@
 								</div>
 								<h5>Sujatha</h5>
 								<div class="designation">Co Ordinator</div>
+
 							</div>
 						</div>
 					</div>
@@ -1499,7 +1494,8 @@
 				<div class="news-block style-two col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="post-date">November 4, 2023</div>
-						<h3><a href="blog-detail.html">One day “Technical Paper Presentation” was organized by Department of CSE (AI & ML) 4th November 2023</a></h3>
+						<h3><a >One day “Technical Paper Presentation” was organized by Department of CSE (AI & ML) 4th November 2023</a></h3> 
+						<!-- href="blog-detail.html" -->
 						<div class="author-box">
 							<h5>Mrs. P. Sujatha</h5>
 							<div class="designation">Co Ordinator</div>
@@ -1518,6 +1514,8 @@
 						</div>
 					</div>
 				</div>
+
+				
 			
 			</div>
 		</div>
