@@ -7,11 +7,15 @@
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<link href="assets/css/facultyDetails.css" rel="stylesheet">
+
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/table.css">
+<link rel="stylesheet" href="assets/css/technicalEvent.css">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -338,7 +342,7 @@
 <body class="hidden-bar-wrapper">
 	<div class="pvpsit-banner">
 		<!-- Image for laptop/desktop -->
-		<img src="./assets/images/main-slider/banner.jpg" class="banner-img desktop" style="height:90px ;">
+		<img src="./assets/images/main-slider/banner.jpg" class="banner-img desktop" style="height:120px ;">
 		<!-- Image for mobile -->
 		<img src="./assets/images/prasad.png" class="banner-img mobile">
 	</div>
@@ -631,6 +635,42 @@
 			<li><a href="#">Text 4 - Short Description</a></li>
 			</ul>
 		</div>
+		<div class="news magenta full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news magenta full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news magenta full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
+		<div class="news magenta full-width">
+			<span>Breaking News</span>
+			<ul class="scrollLeft">
+			<li><a href="#">Text 1 - Short Description</a></li>
+			<li><a href="#">Text 2 - Short Description</a></li>
+			<li><a href="#">Text 3 - Short Description</a></li>
+			<li><a href="#">Text 4 - Short Description</a></li>
+			</ul>
+		</div>
 	</div>
 	<!-- Start slider -->
 	<div id="slider">
@@ -666,10 +706,6 @@
   <input class="radio" id="six" name="group" type="radio">
   <input class="radio" id="seven" name="group" type="radio">
   <input class="radio" id="eight" name="group" type="radio">
-  <input class="radio" id="nine" name="group" type="radio">
-  <input class="radio" id="ten" name="group" type="radio">
-  <input class="radio" id="eleven" name="group" type="radio">
-  <input class="radio" id="twelve" name="group" type="radio">
   <div id="tabs" class="tabs">
   <label class="tab" id="zero-tab" for="zero">About Department</label>
   <label class="tab" id="one-tab" for="one">Vision</label>
@@ -678,12 +714,8 @@
   <label class="tab" id="four-tab" for="four">PSO's</label>
   <label class="tab" id="five-tab" for="five">PO's</label>
   <label class="tab" id="six-tab" for="six">Mentor & Mentees</label>
-  <label class="tab" id="seven-tab" for="seven">Technical Events</label>
-  <label class="tab" id="eight-tab" for="eight">Cultural Events</label>
-  <label class="tab" id="nine-tab" for="nine">Teaching Staff</label>
-  <label class="tab" id="ten-tab" for="ten">Infrastructure</label>
-  <label class="tab" id="eleven-tab" for="eleven">Gallery</label>
-  <label class="tab" id="twelve-tab" for="twelve">Gallery</label>
+  <label class="tab" id="seven-tab" for="seven">Teaching Staff</label>
+  <label class="tab" id="eight-tab" for="eight">Technical Events</label>
     </div>
   <div class="panels">
 	<div class="panel" id="zero-panel">
@@ -728,48 +760,172 @@
 		<br/><strong>Project Management and Finance</strong> : Apply engineering and management principles to project management.
 		<br/><strong>Life-long Learning</strong> : Recognize and engage in lifelong learning amidst technological change.</p>
   </div>
-  <!-- six -->
+  <!-- jmentor and mentees six -->
   <div class="panel" id="six-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+    <div class="panel-title">Mentors and Mentee</div>
+	<table class="mentor-table">
+		<thead>
+			<tr class="mentor-table-row">
+				<th class="mentor-table-header">SI.NO</th>
+				<th class="mentor-table-header">NAME OF THE FACULTY</th>
+				<th class="mentor-table-header">REGISTER NUMBERS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="mentor-table-row">
+				<td class="mentor-table-data" data-label="S.No">1</td>
+				<td class="mentor-table-data" data-label="FACULTY NAME">Mr. Ch. Naresh</td>
+				<td class="mentor-table-data" data-label="REG. NO.">22501A4201 To 22501A4218</td>
+			</tr>
+			<tr class="mentor-table-row">
+				<td class="mentor-table-data" data-label="S.No">2</td>
+				<td class="mentor-table-data" data-label="FACULTY NAME">Mrs. R. Padmaja</td>
+				<td class="mentor-table-data" data-label="REG. NO.">22501A4219 To 22501A4236</td>
+			</tr>
+			<tr class="mentor-table-row">
+				<td class="mentor-table-data" data-label="S.No">3</td>
+				<td class="mentor-table-data" data-label="FACULTY NAME">Mrs. P. Sujatha</td>
+				<td class="mentor-table-data" data-label="REG. NO.">22501A4237 To 22501A4254</td>
+			</tr>
+			<tr class="mentor-table-row">
+				<td class="mentor-table-data" data-label="S.No">4</td>
+				<td class="mentor-table-data" data-label="FACULTY NAME">Mrs. . Sujatha</td>
+				<td class="mentor-table-data" data-label="REG. NO.">22501A4255 To 23505A4206</td>
+			</tr>
+		</tbody>
+	</table>
   </div>
-  <!-- seven -->
-  <div class="panel" id="seven-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  <!-- Teaching Staff -->
+  <div class="panel" id="eight-panel">
+    <div class="panel-title">Technical Events</div>
+	<section class="event-table-container">
+        <table class="event-table">
+            <thead>
+                <tr class="table-header">
+                    <th class="sl-no">SL.NO</th>
+                    <th class="description">DESCRIPTION</th>
+                    <th class="resource-person">RESOURCE PERSON</th>
+                    <th class="coordinators">CO ORDINATORS</th>
+                    <th class="links">LINKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;1</td>
+                    <td class="description">&nbsp;One day <b>“Technical Paper Presentation”</b> was organized by Department of CSE (AI &amp; ML) <strong> 4<sup>th</sup> November 2023</strong></td>
+                    <td class="resource-person"></td>
+                    <td class="coordinators">
+                        <span style="color: blue">Mrs. M. Susmitha</span><br>Assistant Professor, CSE (AI &amp; ML)<br><br>
+                        <span style="color: blue">Mrs. P. Sujatha</span>,<br>Assistant Professor, Dept. of CSE( Data Science)<br><br>
+                    </td>
+                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;2</td>
+                    <td class="description">&nbsp;Webinar on <b>“API and Chatbots”</b> was organized by Dept. of CSE (AI &amp; ML) in association with PVPSIT NDLI CLUB on 28 th October 2023</td>
+                    <td class="resource-person"></td>
+                    <td class="coordinators">
+                        <span style="color: blue">Ms. Rishika Bhatia</span><br>Technical Consulting Engineer, CISCO Systems India Pvt Ltd. Bengaluru<br><br>
+                        <span style="color: blue">Mr. Ravi Shankar Krishna</span><br>Technical Consulting Engineer CISCO Systems India Pvt Ltd. Bengaluru
+                    </td>
+                    <td class="links">&nbsp;<a href="https://drive.google.com/file/d/1ehMKgisTPIkAEZRAUaYs1ucOb-0OkQCC/view?usp=sharing" target="_blank">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;3</td>
+                    <td class="description">&nbsp;<b>“Technical Quiz”</b> was organized by CSE (AI &amp; ML) in association with ISTE Student Chapter on 13 th September 2023</td>
+                    <td class="resource-person"></td>
+                    <td class="coordinators">
+                        <span style="color: blue">Mr. Ch. Naresh</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)<br><br>
+                        <span style="color: blue">Mrs. Ch. P. Nagamani</span><br>Assistant Professor, Dept. of CSE(Data Science)
+                    </td>
+                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;4</td>
+                    <td class="description">&nbsp;Ten Days Workshop on <b>“Problem Solving with Data Structures”</b> was organized by Department of CSE (AI &amp; ML) from 06 th August 2023 to 15 th August 2023.</td>
+                    <td class="resource-person"><span style="color: blue">Ms. Armadhaa R</span><br>Senior Technical Trainer BYTS, Hyderabad</td>
+                    <td class="coordinators">
+                        <span style="color: blue">Mrs. Ch. P. Nagamani</span><br>Assistant Professor, Dept. of CSE(Data Science)<br><br>
+                        <span style="color: blue">Mr. K. Chiranjeevi</span>,<br>Assistant Professor, Dept. of CSE( Data Science)<br><br>
+                        <span style="color: blue">Mrs. P. Hema Venkata Ramana</span><br>Assistant Professor, Dept. of CSE( Data Science)
+                    </td>
+                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="sl-no">&nbsp;5</td>
+                    <td class="description">&nbsp;One-week Short Term Training Programme (STTP) on <b>“Object Oriented Programming through JAVA”</b> was organized by Department of CSE (AI &amp; ML) from 28 th July 2023 to 03 rd August 2023</td>
+                    <td class="resource-person"><span style="color: blue">Mr. Srikanth</span><br>Lead Engineer, EPAM Systems Inc. Hyderabad</td>
+                    <td class="coordinators">
+                        <span style="color: blue">Mr. Ch. Naresh</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)<br><br>
+                        <span style="color: blue">Mrs. R. Padmaja</span><br>Assistant Professor, Dept. of CSE (AI &amp; ML)
+                    </td>
+                    <td class="links">&nbsp;<a href="#">Click here for Details on Event</a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
   </div>
   <!-- eight -->
-  <div class="panel" id="eight-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
+  <div class="panel" id="seven-panel">
+    <div class="panel-title">Teaching Staff</div>
+    <table class="faculty-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Designation</th>
+				<th>Qualification</th>
+				<th>Email</th>
+				<th>Profile Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="faculty-profile">
+				<td class="faculty-name">Dr. B. Janakiramaiah</td>
+				<td class="faculty-designation">Professor & Head</td>
+				<td class="faculty-qualification">B.E(CSE), M.Tech(CSE), Ph.D(CSE)</td>
+				<td class="faculty-email">janakiramaiah@pvpsiddhartha.ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/profile/CSM/CSM100001.pdf">Click here</a></td>
+			</tr>
+			<tr class="faculty-profile">
+				<td class="faculty-name">CH. Naresh</td>
+				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-qualification">B. Tech., M. Tech., (Ph. D)</td>
+				<td class="faculty-email">naresh.ch@pvpsiddhartha.ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010001.pdf">Click here</a></td>
+			</tr>
+			<tr class="faculty-profile">
+				<td class="faculty-name">R. Padmaja</td>
+				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-qualification">M.Tech</td>
+				<td class="faculty-email">rpadmaja@pvpsiddhartha..ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010002.pdf">Click here</a></td>
+			</tr>
+			<tr class="faculty-profile">
+				<td class="faculty-name">Ms. P. Sujatha</td>
+				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-qualification">M.Tech</td>
+				<td class="faculty-email">psujatha@pvpsiddhartha.ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010003.pdf">Click here</a></td>
+			</tr>
+			<tr class="faculty-profile">
+				<td class="faculty-name">Ms. Mandava Susmitha</td>
+				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-qualification">M.Tech.</td>
+				<td class="faculty-email">msusmitha@pvpsiddhartha.ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010004.pdf">Click here</a></td>
+			</tr>
+			<tr class="faculty-profile">
+				<td class="faculty-name">Mr. G. Venkata Krishna</td>
+				<td class="faculty-designation">Assistant Professor</td>
+				<td class="faculty-qualification">M.Tech.</td>
+				<td class="faculty-email">vkrishna@pvpsiddhartha.ac.in</td>
+				<td class="faculty-profile-link"><a target="_blank" href="https://www.pvpsiddhartha.ac.in/Profile/csm/CSM010005.pdf">Click here</a></td>
+			</tr>
+		</tbody>
+	</table>
   </div>
-  <!-- nine -->
-  <div class="panel" id="nine-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
-  </div>
-  <!-- ten -->
-  <div class="panel" id="ten-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
-  </div>
-  <!-- eleven -->
-  <div class="panel" id="eleven-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
-  </div>
-  <!-- twelve -->
-  <div class="panel" id="twelve-panel">
-    <div class="panel-title">PSO's</div>
-    <p><br/><strong>PSO-I</strong>: Utilize computing skills to develop software systems meeting industry and societal needs.<br/>
-		<br/><strong>PSO-II </strong>: Apply data engineering and communication technologies to develop smart and intelligent computing applications.</p>
-  </div>
+  
   <!-- end -->
   </div>
 </div>
